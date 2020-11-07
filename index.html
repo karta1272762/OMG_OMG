@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="themes/A-mao.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>聽說妳很強</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    </style>
+</head>
+<style>
+
+/*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*/
+.tooltip  .tooltiptext1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: center;
+    z-index: 1;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext1 {
+    visibility: visible;
+}
+.tooltip .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: center;
+    z-index: 1;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext2 {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: center;
+    z-index: 1;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext3 {
+    visibility: visible;
+}
+
+.t1 {
+    display: flex;
+    justify-content: center;
+}
+
+.word{
+    font-family: 'Noto Sans TC', sans-serif;  /*字體*/
+    font-size: x-large;
+}
+/*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*//*首頁特效首頁特效*/
+
+</style>
+<body>
+<div class="word">
+<div data-role="page"  id="page1" >
+    <ul data-role="listview" data-inset="true">
+            <div data-role="header" >
+                <h1>聽說妳很強馬</h1 >
+                <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+            </div>
+            <div data-role="panel" data-position-fixed="true" data-display="push" id="nav-panel">
+            <ul data-role="listview">
+            <li data-icon="delete"><a href="#1" data-rel="close">Close menu</a></li>
+            <li><a href="#2" data-rel="answer" class="ui-icon-search">Answer</a></li>
+            <li><a href="#3" data-rel="information" class="ui-icon-info">Imformation</a></li>
+            <li><a href="#page1" data-rel="home" class="ui-ivon-homme">Home</a></li>
+            </ul>
+            </div>
+    <div class="tooltip" >
+            <li data-role="list-divider">軟綿綿挑戰</li>
+            <li><a href="#challenge1-1"  data-role="button" class="ui-btn ui-icon-star ui-btn-icon-left">挑戰一</a></li>
+            <span class="tooltiptext1">這挑戰跟握手一樣簡單</span>
+    </div>    
+    <div class="tooltip" >
+            <li data-role="list-divider">要難不難挑戰</li>
+            <li><a href="#challenge2-1"  data-role="button" class="ui-btn ui-icon-star ui-btn-icon-left">挑戰二</a></li>
+        <span class="tooltiptext2">說小毛太帥就讓你pass</span>
+    </div>
+    <div class="tooltip" >
+            <li data-role="list-divider">蕭告級挑戰</li>
+            <li><a href="#challenge3-1"  data-role="button" class="ui-btn ui-icon-star ui-btn-icon-left">挑戰三</a></li>
+            <span class="tooltiptext3">連北斗神拳都敢惹?</span>
+    </div>
+     <div class="t1">
+         <img src="images/0401.jpg_wh300.jpg">
+     </div>
+    <div data-role="footer" data-position="fixed">
+        <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+    </div>
+</div>
+    
+    <div data-role="panel" id="2" data-dialog="true">
+        <div data-role="header"> 
+        <h1>想要答案?</h1>
+        </div>
+        
+        <div data-role="content">  
+        <p>挑戰一</p>
+        <p>2、1、4、2</p>
+        <p>挑戰二</p>
+        <p>2、2、4、3</p>
+        <p>挑戰三</p>
+        <p>1、3、1</p>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+
+    <div data-role="page" id="challenge1-1">
+        <div data-role="header" >
+            <h1>國文</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+        <h2>哪個是跟{吉}有關的動詞</h2>
+        <a href="#page1" data-role="button">哈士吉</a>
+        <a href="#challenge1-2" data-role="button">溜之大吉</a>
+        <a href="#page1" data-role="button">吉度乾燥</a>
+        <a href="#page1" data-role="button">吉野家</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    
+    <div data-role="page" id="challenge1-2">
+        <div data-role="header">
+            <h1>英文</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2>你覺得需要題目嗎</h2>
+            <a href="#challenge1-3" data-role="button">A-mao is so handsome.</a>
+            <a href="#page1" data-role="button">choose first.</a>
+            <a href="#page1" data-role="button">If you want to pass, you should choose first.</a>
+            <a href="#page1" data-role="button">you go back.</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    <div data-role="page" id="challenge1-3">
+        <div data-role="header">
+            <h1>數學</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2>選正確算式，聽說下一個挑戰的數學很難</h2>
+            <a href="#page1" data-role="button">3X+5X+4X-5X+8X-13X=12X</a>
+            <a href="#page1" data-role="button">3X+3X+6X-10X+8X-13X=-2X</a>
+            <a href="#page1" data-role="button">3X+17X+5X-5X+8X-20X=18X</a>
+            <a href="#challenge1-4" data-role="button">3X+3X+2X-5X+8X-13X=-2X</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    <div data-role="page" id="challenge1-4">
+        <div data-role="header">
+            <h1>化學</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2>哪個是乙酸勒</h2>
+            <a href="0" data-role="button">C3H2</a>
+            <a href="#page1" data-role="button">CH3COOH<a>
+            <a href="0" data-role="button">CH3C2H5</a>
+            <a href="0" data-role="button">CCCCCCHHHOOOOOOC2H5</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    <div data-role="page" id="challenge2-1">
+        <div data-role="header">
+            <h1>國文</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2>哪個成語沒有錯字</h2>
+            <a href="#page1" data-role="button">營私舞弊</a>
+            <a href="#challenge2-2" data-role="button">武功秘笈<a>
+            <a href="#page1" data-role="button">試目以待</a>
+            <a href="#page1" data-role="button">時代先軀</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    <div data-role="page" id="challenge2-2">
+        <div data-role="header">
+            <h1>英文</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2>哪句話的翻譯是錯的</h2>
+            <a href="#page1" data-role="button">Money talks=錢是萬能的</a>
+            <a href="#challenge2-3" data-role="button">Like father like son=愛屋及烏<a>
+            <a href="#page1" data-role="button">They had a beef=他們有爭執</a>
+            <a href="#page1" data-role="button">It's Greek to me=一竅不通</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    <div data-role="page" id="challenge2-3">
+        <div data-role="header">
+            <h1>數學</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2>選正確的算式  聽說有人這關過不了內</h2>
+            <a href="#page1" data-role="button">3X+5X+6X=14X^3</a>
+            <a href="#page1" data-role="button">3X^17+4X^15+2X17=9X^49<a>
+            <a href="#page1" data-role="button">(X+2)(X-2)=X^2+2^2</a>
+            <a href="#challenge2-4" data-role="button">{2X(X+1)}/X=2(X+1)</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    <div data-role="page" id="challenge2-4">
+        <div data-role="header">
+            <h1>物理</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2>哪個物理量，同時表示物體位子移動的大小及移動方向?</h2>
+            <a href="0" data-role="button">路徑</a>
+            <a href="0" data-role="button">路程<a>
+            <a href="#page1" data-role="button">位移</a>
+            <a href="0" data-role="button">距離</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    <div data-role="page" id="challenge3-1">
+        <div data-role="header">
+            <h1>國文,看來你的手是沒被握爆過</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2> 「 」內的字，何者讀音前後相同?</h2>
+            <a href="#challenge3-2" data-role="button">若分「 畛域／悉心問「 診 」</a>
+            <a href="#page1" data-role="button">靈「 鼉 」之鼓／木雕神「 龕 」<a>
+            <a href="#page1" data-role="button">莫得 遯 」隱／鯨「 豚 」保育</a>
+            <a href="#page1" data-role="button">妝「 奩 」冠鏡／輕「 謳 」微吟</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    <div data-role="page" id="challenge3-2">
+        <div data-role="header">
+            <h1>英文</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2>哪個單字為人民的法槌想捶倒的高牆</h2>
+            <a href="#page1" data-role="button">Hierarchy</a>
+            <a href="#page1" data-role="button">Democracy<a>
+            <a href="#challenge3-3" data-role="button">Capitalism</a>
+            <a href="#page1" data-role="button">Communism</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+    <div data-role="page" id="challenge3-3">
+        <div data-role="header">
+            <h1>數學</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div>
+        <div>
+            <h2>哪個選項為此方程式 X^3-X^2+4X-4=0 的解?</h2>
+            <a href="#page1" data-role="button">2i</a>
+            <a href="0" data-role="button">-i<a>
+            <a href="0" data-role="button">i</a>
+            <a href="0" data-role="button">2</a>
+            <a href="0" data-role="button">4</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
+        </div>
+    </div>
+</div>
+        
+
+
+</body>
+</html>
