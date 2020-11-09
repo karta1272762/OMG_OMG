@@ -74,8 +74,7 @@
 }
 
 .t1 {
-    display: flex;
-    justify-content: center;
+    display: flex; justify-content: center;
 }
 
 .word{
@@ -123,9 +122,13 @@
             <li><a href="#challenge3-1"  data-role="button" class="ui-btn ui-icon-star ui-btn-icon-left">挑戰三</a></li>
             <span class="tooltiptext3">連北斗神拳都敢惹?</span>
     </div>
+    
      <div class="t1">
-         <img src="0401.jpg_wh300.jpg">
+         <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="0401.jpg_wh300.jpg" alt="Paris, France"  style="display: flex" style="justify-content: center"></a>
      </div>
+     <div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="0401.jpg_wh300.jpg" style="max-height:512px;" alt="Paris, France">
+        </div>        
     <div data-role="footer" data-position="fixed">
         <h2>Copyright © 2020 A-mao. 1108211075 小毛文教集團出版社</h2>
     </div>
